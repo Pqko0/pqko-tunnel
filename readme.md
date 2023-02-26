@@ -37,3 +37,14 @@ Example
 ```
 pqko-tunnel 8080:8080
 ```
+
+## Code Usage
+
+```
+const main = require("pqko-tunnel")
+const config = main.config("logonUsername", "server_ip", "private_key_path", server_public_port, 5050)
+
+main.tunnel(config, () => console.log("pqko-tunnel is ready"))
+
+require("express")().get("/", (req, res) => res.send("This is automated")).listen(5050, () => console.log("express is ready"))
+```

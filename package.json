@@ -1,8 +1,8 @@
 {
   "name": "pqko-tunnel",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "",
-  "main": "./bin/global.js",
+  "main": "./index.js",
   "bin": {
     "pqko-tunnel": "./bin/global.js"
   },
